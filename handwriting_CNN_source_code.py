@@ -1,5 +1,5 @@
 from tensorflow import keras
-from keras import datasets, layers, models
+from keras import datasets
 import matplotlib.pyplot as plt
 import numpy as np
 
