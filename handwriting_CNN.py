@@ -43,9 +43,8 @@ model.compile(keras.optimizers.Adam(learning_rate=0.001),
 
 model.fit(train_images, train_labels, epochs=10)
 
-model.save('handwriting_CNN1')
-
-
+#here we will save our model, so we dont need to train it again later
+model.save('handwriting_CNN1.h5')
 
 # evaluating the model
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
