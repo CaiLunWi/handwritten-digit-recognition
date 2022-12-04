@@ -4,8 +4,10 @@ We will use MNIST dataset from kers.datasets to build a model, that will be able
 
 Bellow, you can see short description of the files in this repository 
 
-.h5 - our pre-trained model
+.h5 - our saved model
 
-in cnn_handwritting_load_model - this where we can load pre-trained model and test it on test data
+in cnn_handwritting_load_model - source code for the model. You can tweak some hyperparameters, to experement with the model
 
-cnn_handwritting = here i am building the model
+cnn_handwritting = here you can load the model and test it
+
+gui - interface for the digit recognition
