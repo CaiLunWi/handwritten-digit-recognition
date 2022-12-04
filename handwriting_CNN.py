@@ -7,19 +7,19 @@ import numpy as np
 (train_images, train_labels), (test_images, test_labels) = datasets.mnist.load_data()
 
 # check the shape of the data
-print(train_images.shape)
+# print(train_images.shape)
 
 # view an image
-plt.imshow(train_images[0])
-plt.title(train_labels[0])
-plt.colorbar()
-plt.show()
+# plt.imshow(train_images[0])
+# plt.title(train_labels[0])
+# plt.colorbar()
+# plt.show()
 
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
 
 # We will load already trained model here
-model = keras.models.load_model("handwriting_CNN1.h5")
+model = keras.models.load_model("handwriting_CNN.h5")
 
 # evaluating the model
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
